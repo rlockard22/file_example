@@ -1,7 +1,7 @@
 FROM python:3
 
 WORKDIR file_example/
-COPY ./requirements.txt /file_example
+COPY . /file_example
 
 EXPOSE 8080
 

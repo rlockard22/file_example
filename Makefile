@@ -13,7 +13,7 @@ docker-build:
 
 docker-start:
 	@echo "starting the NEW service in container..."
-	docker run  -p 8080:8080 -v /Users/swithana/E222/github/file-example:/file_example file_example
+	docker run -p 8080:8080 file_example
 
 service:
 	@echo "creating the service..."
@@ -22,8 +22,6 @@ service:
 
 start:  
 	@echo "starting the NEW service..."
-	pip install --upgrade pip
-	pip install -r requirements.txt
 	python server.py
 
 docker-stop:
